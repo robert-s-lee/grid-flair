@@ -1,7 +1,8 @@
 
 Grid.ai demo of [Flair](https://github.com/flairNLP/flair).  Flair is A very simple framework for state-of-the-art NLP. Developed by [Humboldt University of Berlin](https://www.informatik.hu-berlin.de/en/forschung-en/gebiete/ml-en/) and friends. 
 
-Please have Grid.ai prerequisites:
+# Grid.ai prerequisites
+
 - login into [Grid.ai](#start-a-gridai-g4dnxlarge--1-x-t4-session)
 - start a Session with GPU instance
 - [Start Jupyter Notebook](#start-a-jupyter-notebook) 
@@ -36,7 +37,7 @@ cd grid-flair
 pip install -r requirements.txt
 ```
 
-## Run Flair [example usage](https://github.com/flairNLP/flair#example-usage)
+# Grid.ai Session Flair [example usage](https://github.com/flairNLP/flair#example-usage)
 
 ```
 % python run.py
@@ -51,6 +52,12 @@ Downloading: 100%|████████████████████�
 Sentence: "I love Berlin ."   [− Tokens: 4  − Token-Labels: "I love Berlin <S-LOC> ."]
 The following NER tags are found:
 Span [3]: "Berlin"   [− Labels: LOC (0.999)]
+```
+
+# Grid.ai Run Flair
+
+```
+grid run --name flair-$(date '+%y%m%d-%H%M%S') --dependency_file requirements.txt run.py
 ```
 
 # Optional
