@@ -55,7 +55,7 @@ Span [3]: "Berlin"   [− Labels: LOC (0.999)]
 
 # Optional
 
-- TODO: does not work
+- TODO: fix up the example 
 
 ```
 pip install pytest
